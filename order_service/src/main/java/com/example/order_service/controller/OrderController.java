@@ -10,7 +10,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/orders")
 @CrossOrigin(origins = "http://localhost:5173")
-//@CrossOrigin(origins = "https://product-frontend-7qqq.onrender.com")
 public class OrderController {
     private final OrderService orderService;
     private final OrderRepository orderRepository;
@@ -31,5 +30,5 @@ public class OrderController {
     }
 
     public record CheckoutRequest(List<CheckoutItem> items, double cost) {}
-    public record CheckoutItem(String name, int quantity, double price) {}
+    public record CheckoutItem(int id, String name, int quantity, double price) {}
 }
