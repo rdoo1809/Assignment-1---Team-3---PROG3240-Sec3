@@ -15,7 +15,6 @@ Both services are containerized with Docker and include a GitHub Actions CI/CD p
 	•	Docker & Docker Compose
 	•	GitHub Actions (CI/CD)
 
-
 ### Project Structure
 assignment1_team3_prog3240_sec3/
 ├─ product_service/      # Product Service microservice
