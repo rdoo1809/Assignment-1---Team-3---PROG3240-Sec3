@@ -1,10 +1,8 @@
-version: "3.9"
-
 services:
   product-service:
     build:
-      context: ./product-service
-    container_name: product-service
+      context: ./product_service
+    container_name: product_service
     ports:
       - "8081:8081"
     environment:
@@ -20,8 +18,8 @@ services:
 
   order-service:
     build:
-      context: ./order-service
-    container_name: order-service
+      context: ./order_service
+    container_name: order_service
     ports:
       - "8082:8082"
     environment:

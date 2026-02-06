@@ -4,7 +4,6 @@ import com.example.product_service.entity.Product;
 import com.example.product_service.repository.ProductRepository;
 import com.example.product_service.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.jackson.autoconfigure.JacksonProperties;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -12,7 +11,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/products")
 @CrossOrigin(origins = "http://localhost:5173")
-//@CrossOrigin(origins = "https://product-frontend-7qqq.onrender.com")
 public class ProductController {
 
     @Autowired
@@ -24,13 +22,7 @@ public class ProductController {
         this.productService = productService;
     }
 
-//    @PostMapping
-//    public JacksonProperties.Json test(@RequestBody JacksonProperties.Json newProduct) {
-//       return newProduct;
-//    }
-
     @GetMapping
-//    @CrossOrigin(origins = "https://product-frontend-7qqq.onrender.com")
     public List<Product> getAllProducts() {
         return mySqlRepository.findAll();
     }
