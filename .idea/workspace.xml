@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dc201f64-e64b-4a21-9d3b-890ec73bf5ab" name="Changes" comment="fiix error" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="38wepfQtKDxraWalvNOKxnPpvLG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/ryan/Desktop/assignment1_team3_prog3240_sec3",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.27397.103" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dc201f64-e64b-4a21-9d3b-890ec73bf5ab" name="Changes" comment="" />
+      <created>1769715244645</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1769715244645</updated>
+      <workItem from="1769715245941" duration="9313000" />
+    </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1769715270951</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1769715270951</updated>
+    </task>
+    <task id="LOCAL-00002" summary="remove idea files">
+      <option name="closed" value="true" />
+      <created>1769715406332</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1769715406332</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add docker files">
+      <option name="closed" value="true" />
+      <created>1770405662693</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1770405662693</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update dependencies">
+      <option name="closed" value="true" />
+      <created>1770405873942</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1770405873942</updated>
+    </task>
+    <task id="LOCAL-00005" summary="match ports">
+      <option name="closed" value="true" />
+      <created>1770405980630</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1770405980630</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update for local db">
+      <option name="closed" value="true" />
+      <created>1770406045525</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1770406045525</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update for local db">
+      <option name="closed" value="true" />
+      <created>1770406094358</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1770406094358</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add github workflow">
+      <option name="closed" value="true" />
+      <created>1770406247073</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1770406247073</updated>
+    </task>
+    <task id="LOCAL-00009" summary="congifure docker">
+      <option name="closed" value="true" />
+      <created>1770407126018</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1770407126019</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fiix error">
+      <option name="closed" value="true" />
+      <created>1770407433857</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1770407433857</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="remove idea files" />
+    <MESSAGE value="add docker files" />
+    <MESSAGE value="update dependencies" />
+    <MESSAGE value="match ports" />
+    <MESSAGE value="update for local db" />
+    <MESSAGE value="add github workflow" />
+    <MESSAGE value="congifure docker" />
+    <MESSAGE value="fiix error" />
+    <option name="LAST_COMMIT_MESSAGE" value="fiix error" />
+  </component>
+</project>
