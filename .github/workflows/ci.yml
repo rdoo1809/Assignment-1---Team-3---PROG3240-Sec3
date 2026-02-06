@@ -24,11 +24,11 @@ jobs:
           distribution: 'temurin'
 
       - name: Build & test Product Service
-        working-directory: product-service
+        working-directory: product_service
         run: mvn clean test
 
       - name: Build & test Order Service
-        working-directory: order-service
+        working-directory: order_service
         run: mvn clean test
 
       - name: Upload test reports
@@ -36,8 +36,8 @@ jobs:
         with:
           name: test-reports
           path: |
-            product-service/target/surefire-reports
-            order-service/target/surefire-reports
+            product_service/target/surefire-reports
+            order_service/target/surefire-reports
 
   # -------------------------
   # Job 2: Docker Build & Integration Test
@@ -101,11 +101,11 @@ jobs:
           distribution: 'temurin'
 
       - name: Run Checkstyle (Order Service)
-        working-directory: order-service
+        working-directory: order_service
         run: mvn checkstyle:check
         continue-on-error: true
 
       - name: Run Checkstyle (Product Service)
-        working-directory: product-service
+        working-directory: product_service
         run: mvn checkstyle:check
         continue-on-error: true
