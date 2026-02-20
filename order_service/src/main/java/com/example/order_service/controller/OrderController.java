@@ -29,7 +29,7 @@ public class OrderController {
 
     @PostMapping
     public ResponseEntity<Order> checkout(@RequestBody CheckoutRequest request) {
-        // calculate order quantity
+        // calculate order quantity for bulk discount
         int orderQuantity = 0;
         for (OrderController.CheckoutItem item : request.items()) orderQuantity += item.quantity;
 
