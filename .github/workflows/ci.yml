@@ -35,8 +35,6 @@ jobs:
           path: |
             product_service/target/surefire-reports
             order_service/target/surefire-reports
-      - name: Generate coverage
-        run: mvn jacoco:report
 
   docker-integration-test:
     runs-on: ubuntu-latest
