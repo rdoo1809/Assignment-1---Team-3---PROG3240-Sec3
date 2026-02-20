@@ -96,7 +96,7 @@ jobs:
           -H "Content-Type: application/json" \
           -X POST "http://localhost:4242/api/admin/projects/default/features/premium-pricing/environments/development/on"
           RESPONSE=$(curl -s http://localhost:8081/api/products/premium)
-          echo "$RESPONSE" | jq '.[] | select(.price != null)'
+          echo "$RESPONSE"
 
       - name: Stop stack
         run: docker compose down
