@@ -2,6 +2,7 @@ package com.example.product_service.controller;
 
 import com.example.product_service.entity.Product;
 import com.example.product_service.repository.ProductRepository;
+import com.example.product_service.service.FeatureFlagService;
 import com.example.product_service.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -17,9 +18,11 @@ public class ProductController {
     ProductRepository mySqlRepository;
 
     private final ProductService productService;
+    private final FeatureFlagService featureFlagService;
 
-    public ProductController(ProductService productService) {
+    public ProductController(ProductService productService, FeatureFlagService featureFlagService) {
         this.productService = productService;
+        this.featureFlagService = featureFlagService;
     }
 
     @GetMapping
@@ -31,6 +34,16 @@ public class ProductController {
     public Product getProduct(@PathVariable int index) {
         return mySqlRepository.findById(index)
                 .orElseThrow(() -> new RuntimeException("Product not found"));
+    }
+
+    @GetMapping("/premium")
+    public List<Product> getPremiumProducts() {
+        List<Product> products = mySqlRepository.findAll();
+
+        if (featureFlagService.isPremiumPricingEnabled()) {
+            products.forEach(p -> p.setPrice(p.getPrice() *0.9));
+        }
+        return products;
     }
 
     @PostMapping

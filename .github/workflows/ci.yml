@@ -35,3 +35,55 @@ jobs:
           path: |
             product_service/target/surefire-reports
             order_service/target/surefire-reports
+      - name: Generate coverage
+        run: mvn jacoco:report
+
+  docker-integration-test:
+    runs-on: ubuntu-latest
+    needs: build-and-test
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build Docker images
+        run: docker compose build
+
+      - name: Start stack
+        run: docker compose up -d
+
+      - name: Wait for services
+        run: |
+          echo "Waiting for services..."
+          sleep 60
+
+      - name: Initialize feature flags
+        run: bash scripts/init-flags.sh
+
+      - name: Test premium pricing flag
+        run: |
+          RESPONSE=$(curl -s http://localhost:8081/api/products/premium)
+          echo "$RESPONSE"
+
+      - name: Stop stack
+        run: docker compose down
+
+  feature-flag-validation:
+    runs-on: ubuntu-latest
+    needs: docker-integration-test
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Start stack
+        run: docker compose up -d
+
+      - name: Wait for services
+        run: sleep 60
+
+      - name: Verify flags exist
+        run: |
+          curl -H "Authorization: Bearer default:development.unleash-insecure-admin-api-token" \
+          http://localhost:4242/api/admin/projects/default/features
+
+      - name: Stop stack
+        run: docker compose down
