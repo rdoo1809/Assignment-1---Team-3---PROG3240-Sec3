@@ -29,6 +29,7 @@ public class OrderController {
 
     @PostMapping
     public ResponseEntity<Order> checkout(@RequestBody CheckoutRequest request) {
+        // calculate order quantity
         int orderQuantity = 0;
         for (OrderController.CheckoutItem item : request.items()) orderQuantity += item.quantity;
 
