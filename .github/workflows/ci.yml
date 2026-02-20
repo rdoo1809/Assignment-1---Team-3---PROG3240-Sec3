@@ -92,7 +92,7 @@ jobs:
 
       - name: Test feature flag toggle
         run: |
-          curl -x POST "http://localhost:4242/api/admin/projects/default/features/premium-pricing/environments/development/on" \
+          curl -X POST "http://localhost:4242/api/admin/projects/default/features/premium-pricing/environments/development/on" \
           -H "Authorization: Bearer $ADMIN_TOKEN"
           RESPONSE=$(curl -s http://localhost:8081/api/products/premium)
           echo "$RESPONSE" | jq '.[] | select(.price != null)'
