@@ -22,10 +22,18 @@ jobs:
 
       - name: Build & test Product Service
         working-directory: product_service
+        env:
+          UNLEASH_API_URL: http://localhost:4242/api
+          UNLEASH_API_TOKEN: *:development.3ef732b18cf9e5f8c614de5cf09760a5f6a2e3d703da67fcb3d00430
+          UNLEASH_APP_NAME: product-service
         run: mvn clean test
 
       - name: Build & test Order Service
         working-directory: order_service
+        env:
+          UNLEASH_API_URL: http://localhost:4242/api
+          UNLEASH_API_TOKEN: *:development.3ef732b18cf9e5f8c614de5cf09760a5f6a2e3d703da67fcb3d00430
+          UNLEASH_APP_NAME: order-service
         run: mvn clean test
 
       - name: Upload test reports

@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dc201f64-e64b-4a21-9d3b-890ec73bf5ab" name="Changes" comment="fiix error">
       <change afterPath="$PROJECT_DIR$/unleash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +122,7 @@
       <workItem from="1770416082300" duration="21000" />
       <workItem from="1770416255004" duration="890000" />
       <workItem from="1771270885498" duration="743000" />
-      <workItem from="1771531303293" duration="18611000" />
+      <workItem from="1771531303293" duration="19835000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
