@@ -12,10 +12,6 @@ public class FeatureFlagService {
         this.unleash = unleash;
     }
 
-    public boolean isPremiumPricingEnabled() {
-        return unleash.isEnabled("premium-pricing", false);
-    }
-
     public boolean isOrderNotificationsEnabled() {
         return unleash.isEnabled("order-notifications", false);
     }

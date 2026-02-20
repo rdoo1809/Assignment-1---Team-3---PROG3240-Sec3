@@ -15,12 +15,4 @@ public class FeatureFlagService {
     public boolean isPremiumPricingEnabled() {
         return unleash.isEnabled("premium-pricing", false);
     }
-
-    public boolean isOrderNotificationsEnabled() {
-        return unleash.isEnabled("order-notifications", false);
-    }
-
-    public boolean isBulkDiscountEnabled() {
-        return unleash.isEnabled("bulk-order-discount", false);
-    }
 }
